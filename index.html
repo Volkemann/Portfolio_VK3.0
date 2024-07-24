@@ -13,73 +13,214 @@
 <body>
     
 
+    
+    <header id="header"><!--CABEÇALHO-->
 
-        <header><!--BARRA DE NAVEGAÇÃO-->
-    
-            <div class="Topo"><!--INTERFACE-->
-                <div class="logo"><!--logo-->
+        <div class="Topo"><!--INTERFACE-->
+            <div class="logo"><!--logo-->
+                <a href="#home">
+                    <img class="img" src="/imagens/Minha_Logo/VK-LogoTipo2(1).png" height="80" width="90" alt="Logo agência VK"> 
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu_desktop">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#especialidade">Especialidades</a></li>
+                    <li><a href="#projeto">Projetos</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="VK-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+
+            </div>
+
+
+        </div><!--INTERFACE-->
+    </header><!--CABEÇALHO FIM-->
+
+    <section class="inicio"><!--SECTION INÍCIO-->
+        <div class="interface"><!--INTERFACE-->
+            <div class="flex"><!--INTERFACE-->
+                <div class="titulo"><!--TITULO TOPO-->
+                    <h3>Olá, Meu nome é</h3>
+                        <h1>João V. Gomes</h1>
+                    <div class="txt-animado">E sou <span></span></div>
+            
+                </div><!--TITULO TOPO FIM-->
+            
+                <div class="socias-midia"><!--MIDIAS SOCIAIS-->
                     <a href="#">
-                        <img class="img" src="img/VK-LogoTipo2(1).png" height="80" width="90" alt="Logo agência VK"> 
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-                </div><!--logo-->
-    
-                <nav class="menu_desktop">
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Especialidades</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                    </ul>
-    
-                </nav>
-    
-                <div class="VK-contato">
                     <a href="#">
-                        <button>Contato</button>
+                        <i class="fa-brands fa-github"></i>
                     </a>
-    
-                </div>
-    
-    
-            </div><!--INTERFACE-->
-        </header><!--BARRA DE NAVEGAÇÃO FIM-->
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
         
-        <div class="titulo"><!--TITULO TOPO-->
-            <p id="id-1">Olá, Meu nome é</p>
-                <h1>João V. Gomes</h1>
-            <p id="id-2">E sou um Desenvolvedor Front-end</p>
-    
-        </div><!--TITULO TOPO FIM-->
-    
-        <div class="socias-midia">
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+                
+            
+                </div><!--MIDIAS SOCIAS FIM-->
 
-        <div class="descer-pag">
-    
-                <button>
+                
+            </div><!--FLEX FIM-->
+            <div class="descer-pag">
+        
+                <button id="botao">
                 <i class="fa-solid fa-arrow-right fa-rotate-90 fa-2xl" style="color: #757575;"></i>
                 </button>
+            </div>
+        </div><!--INTERFACE FIM-->
+
+
+
+        
+
+    </section><!--SECTION INICIO FIM-->
+
+    <section class="sobre"><!--SECTION SOBRE-->
+        <div class="hidden">
+            <div class="interface"><!--INTERFACE-->
+                <div class="flex-sobre"><!--FLEX-->
+                    <div class="img-sobre">
+                        <img src="/imagens/Imagem-Sobre/img-sobre.jpg" width="320px" height="395px" alt="imagem sobre">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER,<span>SOU O JOÃO VITOR GOMES.</span></h2>
+                        <p>Estou em busca de me tornar um desenvolvedor web profissional com especialização em Full Stack, sempre empenhado em expandir meus conhecimentos e habilidades. Sou uma pessoa focada e realista, o que me permite enfrentar desafios de forma objetiva e eficiente.</p>
+                        <p>Tenho uma verdadeira paixão por criar sites minimalistas, apreciando a simplicidade e a elegância que esse estilo de design oferece. Minha jornada acadêmica está focada em Análise e Desenvolvimento de Sistemas (ADS), onde estou constantemente aprimorando minhas competências técnicas e teóricas.</p>
+                        <p>Acredito que a combinação de um design limpo e funcional com uma estrutura robusta e eficiente é a chave para criar experiências web excepcionais. Estou determinado a aplicar essa filosofia em todos os meus projetos, garantindo que cada site que desenvolvo não apenas atenda às expectativas dos usuários, mas também ofereça uma experiência visualmente agradável e intuitiva.</p>
+                    </div>
+                </div><!--FLEX-->
+            </div><!--INTERFACE-->
+        </div>
+    </section><!--SECTION SOBRE FIM-->
+
+    <section class="especialidades"><!--SECTION ESPECIALIDADES-->
+        <div class="hidden">
+
+            <div class="interface"><!--INTERFACE-->
+                <h2 class="titulo">MINHAS ESPECIALIDADES</h2>
+                <div class="flex"><!--FLEX-->
+                    <p id="id-09">Minha abordagem é combinar um design minimalista e impactante com funcionalidade intuitiva e otimização para resultados. Cada projeto que crio é feito com atenção aos detalhes e um compromisso com a elegância e a eficiência. <br>
+                        <br> <span>- Design limpo, mente limpa. -</span></p>
     
+                        <div class="container"><!--CARTAS HABILIDADES-->
+    
+                            <div class="card"> <img src="/imagens/icons/html5.png" width="75px" height="70px" alt="">
+                                <h2>- HTML 5 -</h2>
+                                <p>Tenho ampla experiência em desenvolver interfaces de usuário interativas e responsivas, Utilizo as melhores práticas de desenvolvimento e técnicas avançadas para construir aplicações web robustas, escaláveis, fluida, intuitiva e visualmente atraentes.</p>
+                                <a href="https://ebaconline.com.br/blog/o-que-e-html5-seo#:~:text=O%20HTML5%20é%20a%20última,adicionar%20funcionalidade%20aos%20elementos%20HTML." class="button">Saiba Mais</a>
+                            </div>
+    
+                            <div class="card"> <img src="/imagens/icons/css-icon.png" width="75px" height="70px" alt="">
+                                <h2>- CSS 3 -</h2>
+                                <p>Conhecimento em CSS3 que me permite criar interfaces de usuário sofisticadas e visualmente atraentes. Utilizo técnicas avançadas como Flexbox, Grid Layout e animações CSS para desenvolver layouts responsivos que se adaptam perfeitamente a qualquer dispositivo.</p>
+                                <a href="#" class="button">Saiba Mais</a>
+                            </div>
+    
+                            <div class="card"> <img src="/imagens/icons/icon-react.png" width="75px" height="70px" alt="">
+                                <h2>- React -</h2>
+                                <p>Experiência na criação de interfaces de usuário dinâmicas e responsivas que não apenas atendem, mas superam as expectativas dos usuários. Meu foco está em desenvolver soluções que sejam visualmente atraentes e funcionais, garantindo uma experiência de usuário fluida e intuitiva em diferentes dispositivos e plataformas.</p>
+                                <a href="#" class="button">Saiba Mais</a>
+                            </div>
+    
+                            <div class="card"> <img src="/imagens/icons/java-script-png.png" width="75px" height="70px" alt="">
+                                <h2>- JavaScript  -</h2>
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+                                <a href="#" class="button">Saiba Mais</a>
+                            </div>
+    
+                            <div class="card"> <img src="/imagens/icons/node-js.227x256.png" width="75px" height="79px" alt="">
+                                <h2>- Node JS -</h2>
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+                                <a href="#" class="button">Saiba Mais</a>
+                            </div>
+                        
+                            <div class="card"> <img src="/imagens/icons/python.png" width="75px" height="79px" alt="">
+                                <h2>- Python -</h2>
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+                                <a href="#" class="button">Saiba Mais</a>
+                            </div>
+    
+                        </div><!--CARTAS HABILIDADES FIM-->
+    
+                    </div><!--FLEX FIM-->
+            </div><!--INTERFACE FIM-->
         </div>
+    </section><!--SECTION ESPECIALIDADES FIM-->
 
-    <section class="sobre">
-        <div class="interface">
-            
+    <section class="projeto"><!--SECTION PROJETO-->
+        <div class="hidden">
+
+            <div class="interface"><!--INTERFACE-->
+                <h2>PROJETOS</h2>
+                <div class="flex"><!--FLEX-->
+                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
+                        <div class="overlay">
+                            Projeto 1 <!--Nome projeto-->
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
+                        <div class="overlay">
+                            Projeto 2 <!--Nome projeto-->
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
+                        <div class="overlay">
+                            Projeto 3 <!--Nome projeto-->
+                        </div>
+                    </div>
+                    
+                </div><!--FLEX FIM-->
+            </div><!--INTERFACE FIM-->
         </div>
-    </section>
+    </section><!--SECTION PROJETO FIM-->
 	
+    <section class="contato"><!--SECTION CONTATO-->
+        <div class="hidden">
 
+            <div class="interface">
+                <h2 class="heading">FALE COMIGO</h2>
+                <div class="flex">
+    
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" name="name" placeholder="Nome" required>
+                            <input type="email" placeholder="Email @" required>
+                            <input type="Numero" placeholder="Nº de Telefone" required>
+                            <input type="text" placeholder="Objetivo">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Sua Menssagem"></textarea>
+                        <input type="Submit" value="Mandar mensagem" class="btn">
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </section><!--SECTION CONTATO FIM-->
 
+    <footer class="footer"><!--SECTION RODAPÉ-->
+        <ul class="list"> 
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Serviço</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Políticas de Privacidade</a></li>
+        </ul>
+        <p class="copyright">
+            © Volkemann Dev | Todos os direitos reservados
+        </p>
+    </footer><!--SECTION RODAPÉ FIM-->
 </body>
 </html>

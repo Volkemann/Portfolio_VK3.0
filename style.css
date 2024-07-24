@@ -9,16 +9,23 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden ;
+}
+
 body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg, #000, #181818, #656565);
-    background-size: 300% 300%;
-    animation: color 12s ease-in-out infinite;
+    background: #070707;
+    scroll-behavior: smooth;
 }
+
+/* Estilos responsivos */
+
 
 .img-logo-login{
     height: 109px;
@@ -26,7 +33,7 @@ body{
     margin-left: -20px;
 }
 
-
+/* CABEÇALHO */
 
 .VK-contato button {
     padding: 7px 36px;
@@ -42,7 +49,12 @@ body{
 }
 
 header{
+    position: fixed;
+    width: 100%;
     padding: 20px 37px 6%;
+    top: 0;
+    left: 0;
+    transition: .5s;
 
 }
 
@@ -80,115 +92,467 @@ header nav ul li{
 
 }
 
-.VK-contato button:hover{
+.contato-btn button:hover{
     box-shadow: 0px 0px 4px white;
     transform: scale(1.05);
 
 }
+header.rolagem{
+    background-color: #181818f3;
+    padding: 15px 4%;
+    z-index: 1;
+}
+/* CABEÇALHO */
 
-.titulo{
+ /* SECTION INICIO COMEÇO*/
+section.inicio{
+    padding: 111px 4%;
+    background-attachment: fixed;
+
+    
+}
+.flex .titulo{
+    padding: 135px 32px 1px;
+}
+
+.titulo h3{
     color: white;
-    font-weight: 500;
-}
-
-.titulo h1{
-    font-size: 35px;
-    position: absolute;
-    text-align: center;
-    top: 58%;
-    left: 5%;
-    margin: 0;
-    padding: 0;
-
-}
-
-#id-1{
-    position: absolute;
-    text-align: center;
-    top: 52%;
-    left: 5%;
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
-}
-
-#id-2{
-    position: absolute;
-    text-align: center;
-    top: 65%;
-    left: 5%;
-    margin: 0;
-    padding: 0;
     font-size: 28px;
 }
+.titulo h1{
+    color: white;
+    margin-top: 13px;
+    font-size: 38px;
+}
+.txt-animado{
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 8px;
 
-
-.socias-midia{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    font-size: 33px;
-    top: 88%;
-    left: 4%;
-    margin: 0;
-    padding: 0;
+}
+.txt-animado span{
+    position: relative;
 }
 
+.txt-animado span::before{
+    content: "";
+    color: white;
+    animation: palavras 29s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid white;
+    right: -5px;
+    animation: cursor .8s infinite, digita 29s steps(15) infinite;
+    width: calc(100% + 11px);
+    background-color: #050505;
+}
+
+@keyframes digita{
+    10%,15%,
+    30%,35%,
+    50%,55%,
+    70%,75%,
+    90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width:calc(100% + 11px) ;
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid rgb(31, 31, 31);
+    }
+}
+
+@keyframes palavras{
+    0%,20%{
+        content: "Desenvolvedor Web";
+    }
+    21%,40%{
+        content: "Freelancer";
+    }
+    41%,60%{
+        content: "Estudante";
+    }
+    61%,80%{
+        content: "Desenvolvedor Front-End";
+    }
+    81%,100%{
+        content: "Detalhista";
+    }
+}
+
+.socias-midia{
+    padding: 55px 28px 1px;
+    margin-top: 101px;
+    font-size: 34px;
+}
 .socias-midia a{
     color: white;
     text-decoration: none;
-    display: inline-block;
-    justify-content: space-around;
-    padding: 2px 14px 6%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    margin: 0rem 1.5rem 3rem 0;
+    
 }
 .socias-midia a:hover{
     color: white;
-    transform: scale(1.09);
+    transform: scale(1.14) translatey(-5px);
     transition: transform 200ms ease-in-out;
+    box-shadow: 0 0 8px rgb(128, 128, 128);
 }
 
 .descer-pag button{
     display: block;
-    margin-right: auto;
-    position: absolute ;
-    top: 26%;
-    left: 210%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 89%;
+    left: 45%;
     background: #121212;
-    border: 2px solid #121212;
-    border-radius: 56px;
+    border-style: none;
+    border-radius: 76px;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    animation: jumping 2s linear infinite;
+    scroll-behavior: smooth;
+    scroll-padding-top:10px ;
 }
 
-/* SECTION ESPECIALIDADES*/
+/* SECTION INCIO FIM*/
 
-.especialidades h2{
+/* SECTION SOBRE COMEÇO*/
+section.sobre{
+    padding: 109px 4%;
+    box-shadow: 0 0 20px 3px #ffffff10;
+
+}
+.flex-sobre{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.sobre .txt-sobre span{
+    display: block;
+}
+.sobre .txt-sobre{
+    color: #fff;
+    text-indent: 20px;
+}
+.txt-sobre h2{
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+.txt-sobre p{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align:justify ;
+}
+section.sobre img{
+    top: 35%;
+    border-radius: 17%;
+    border: 2px solid rgba(255, 255, 255, 0.541);
+}
+
+/* SECTION SOBRE FIM*/
+
+/* SECTION ESPECIALIDADES COMEÇO*/
+section.especialidades{
+    padding: 80px 4%;
+}
+section.especialidades h2{
     color: white;
-    font-size: 29px;
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 4px;
+    left: 15%;
+}
+
+section.especialidades #id-09{
+    padding: 45px 73px;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 23px;
+    text-align: center;
+    margin-top: 5%;
+    left: 15%;
+}
+
+.container img{
+    margin-top: 23px;
+}
+section.especialidades #id-09 span{
+    color: #ffffffcb;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px;
+}
+.card {
+    background: #0a0a0a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 275px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card p{
+    color: #fff;
+}
+.card::before {
+    content: attr(img);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: rgb(255, 254, 254);
+}
+.card:nth-child(1) {
+    border-top: 5px solid #ee6331;
+    border-left: 5px solid #ee6331;
+}
+.card:nth-child(2) {
+    border-top: 5px solid #0059ff;
+    border-left: 5px solid #0059ff;
+}
+.card:nth-child(3) {
+    border-top: 5px solid #00ced1;
+    border-left: 5px solid #00ced1;
+}
+.card:nth-child(4) {
+    border-top: 5px solid #ffd700;
+    border-left: 5px solid #ffd700;
+}
+
+.card:nth-child(5) {
+    border-top: 5px solid #065c19;
+    border-left: 5px solid #065c19;
+}
+.card:nth-child(6) {
+    border-top: 5px solid #004696;
+    border-left: 5px solid #978e12;
+}
+
+.button {
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+
+    transition: background 0.3s, color 0.3s;
+}
+.button:hover {
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+/* SECTION ESPECIALIDADES FIM*/
+
+
+/* SECTION PROJETO COMEÇO*/
+section.projeto{
+    padding: 80px 4%;
+    box-shadow: 0 0 20px 3px #ffffff10;
+}
+.projeto h2{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    padding: 40px;
+}
+
+.img-port{
+    width: 360px;
+    height: 522px;
+    background-color: #131313;
+    background-size: cover;
+    background-position: 100% 0%;
+    animation: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #58585852;
+    border-radius: 40px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+section.projeto .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+/* SECTION PROJETO FIM*/
+
+/* SECTION CONTATO COMEÇO*/
+.contato h2{
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    padding: 40px;
+}
+
+.contato .flex{
     display: flex;
     justify-content: center;
-    align-items: center;
-    top: 900px;
+    flex-wrap: wrap;
+
 }
 
+.contato form{
+    max-width: 700px;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
 
+.contato form .input-box input, .contato form textarea {
+    font-size: 12%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 0.8rem;
+    border: 3px solid #fff;
+    margin: 1rem 0;
+    resize: none;
+}
 
+.contato form .btn{
+    margin-top: 2rem;
+    padding: 14px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
 
+.contato form .btn:hover{
+    color: #000;
+    box-shadow: 0px 0px 6px white;
+    transform: scale(1.10);
+    background-color: white;
+}
 
+/* SECTION CONTATO FIM*/
 
+/* SECTION RODAPÉ COMEÇO*/
 
-@keyframes color{
-    0%{
-        background-position: 0 50%;
-    }
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #101010;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.footer ul li a{
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+/* ANIMAÇÕES */
+
+@keyframes jumping{
+    from{transform: translateY(-15px ); }
+
     50%{
-        background-position: 100% 50%;
+        transform: translateY(0);
     }
-    100%{
-        background-position: 0 50%;
-    }
+    to {transform: translateY(-15px) }
 }
+
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
+}
+/* ANIMAÇÕES */
