@@ -20,19 +20,170 @@ body{
     font-style: normal;
     height: 100vh;
     width: 100%;
-    background: #070707;
+    background: #050505;
     scroll-behavior: smooth;
 }
 
+section{
+    width: 100%;
+}
 /* Estilos responsivos */
+@media screen and (max-width: 1020px) {
 
+    /*CLASSES GERAIS*/
+    section.sobre p{
+        padding: 19px -1%;
+        font-weight: 300;
+        letter-spacing: -1px;
+    }
+    section.sobre h2{
+        font-size: 34px;
+        text-align: center;
+
+    
+    }
+    section .sobre, .especialidades, .projetos, .contato, .footer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .flex-sobre{
+        flex-direction: column;
+    }
+    .socias-midia{
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 70px;
+        margin-top: -50%;
+        left: -5.5%;
+        height: -10%;
+        width: 115%;
+        justify-content:center;
+    }
+    .descer-pag{
+        position: relative;
+        margin-top: 8%;
+        left: -3%;
+    }
+
+    section.projeto {
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+    section.projeto .flex{
+        gap: 30px;
+        flex-direction: column;
+    }
+    .contato{
+        padding:25px 6%;
+        
+    }
+    .menu-mobile{
+        display: block;
+        z-index: 10000;
+    }
+    #btn-menu{
+        display: block;
+        z-index: 10000;
+    }
+    
+
+    /*CABEÇALHO*/ 
+
+    .menu-desktop, .VK-contato{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 800px){
+    .descer-pag{
+        position: relative;
+        left: 13px;
+    }
+}
 
 .img-logo-login{
     height: 109px;
     width: 120px;
     margin-left: -20px;
 }
+/*ESTILO MENU MOBILE*/
 
+.btn-abrir i{
+    color: white;
+    font-size: 40px; 
+}
+.btn-abrir{
+    display: none;
+}
+
+
+.menu-mobile{
+    background-color: #050505fa;
+    height: 200vh;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 99999;
+    
+   
+}
+.menu-mobile.abrir-menu{
+    width: 65%;
+    
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+   display: block;
+   
+}
+.menu-mobile .btn-fechar i{
+    color: white;
+    font-size: 38px;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+
+}
+.menu-mobile ul li a{
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+    padding: 20px 8%;
+    display: block;
+    
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #2222221e;
+
+
+}
+.overlay-menu{
+    background-color: #08080841;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 77777;
+    display: none;
+
+}
 /* CABEÇALHO */
 
 .VK-contato button {
@@ -80,12 +231,13 @@ header a:hover{
 }
 
 header nav ul{
+    left: -5px;
     list-style-type: none;
-    font-size: 18px;
-
+    font-size: 19px;
+    
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
     
@@ -98,21 +250,21 @@ header nav ul li{
 
 }
 header.rolagem{
-    background-color: #181818f3;
-    padding: 15px 4%;
+    background-color: #131313f3;
+    padding: 8px 4%;
     z-index: 1;
+    backdrop-filter: blur(4px);
 }
 /* CABEÇALHO */
 
  /* SECTION INICIO COMEÇO*/
 section.inicio{
-    padding: 111px 4%;
-    background-attachment: fixed;
-
+    padding: 90px 4%;
+    z-index: 1;
     
 }
 .flex .titulo{
-    padding: 135px 32px 1px;
+    padding: 195px 32px 1px;
 }
 
 .titulo h3{
@@ -128,11 +280,13 @@ section.inicio{
     color: white;
     font-size: 34px;
     font-weight: 600;
-    margin-top: 8px;
+
+    
 
 }
 .txt-animado span{
-    position: relative;
+    position:relative;
+    
 }
 
 .txt-animado span::before{
@@ -144,7 +298,7 @@ section.inicio{
 .txt-animado span::after{
     content: "";
     position: absolute;
-    height: 100%;
+    height: 39px;
     border-left: 2px solid white;
     right: -5px;
     animation: cursor .8s infinite, digita 29s steps(15) infinite;
@@ -191,8 +345,8 @@ section.inicio{
 
 .socias-midia{
     padding: 55px 28px 1px;
-    margin-top: 101px;
-    font-size: 34px;
+    margin-top: 114px;
+    font-size: 32px;
 }
 .socias-midia a{
     color: white;
@@ -205,7 +359,7 @@ section.inicio{
     height: 4rem;
     border: 0.2rem solid white;
     border-radius: 50%;
-    margin: 0rem 1.5rem 3rem 0;
+    margin: 0rem 1.5rem 1rem 0;
     
 }
 .socias-midia a:hover{
@@ -215,13 +369,17 @@ section.inicio{
     box-shadow: 0 0 8px rgb(128, 128, 128);
 }
 
-.descer-pag button{
-    display: block;
+.descer-pag{
+    scroll-padding-top: 2px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 89%;
-    left: 45%;
+}    
+.descer-pag button{
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top: -32px;
+    left: 47%;
     background: #121212;
     border-style: none;
     border-radius: 76px;
@@ -230,15 +388,14 @@ section.inicio{
     cursor: pointer;
     animation: jumping 2s linear infinite;
     scroll-behavior: smooth;
-    scroll-padding-top:10px ;
 }
 
 /* SECTION INCIO FIM*/
 
 /* SECTION SOBRE COMEÇO*/
 section.sobre{
-    padding: 109px 4%;
-    box-shadow: 0 0 20px 3px #ffffff10;
+    padding: 100px 5%;
+   
 
 }
 .flex-sobre{
@@ -254,14 +411,14 @@ section.sobre{
     text-indent: 20px;
 }
 .txt-sobre h2{
-    font-size: 40px;
+    font-size:40px;
     line-height: 45px;
     margin-bottom: 30px;
 }
 .txt-sobre p{
     font-size: 17px;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align:justify ;
 }
 section.sobre img{
@@ -274,7 +431,7 @@ section.sobre img{
 
 /* SECTION ESPECIALIDADES COMEÇO*/
 section.especialidades{
-    padding: 80px 4%;
+    padding: 100px 4%;
 }
 section.especialidades h2{
     color: white;
@@ -311,7 +468,7 @@ section.especialidades #id-09 span{
     background: #0a0a0a;
     border-radius: 10px;
     padding: 20px;
-    width: 275px;
+    width: 285px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -387,20 +544,22 @@ section.projeto{
 }
 
 .img-port{
-    width: 360px;
-    height: 522px;
+    width: 960px;
+    height: 422px;
     background-color: #131313;
     background-size: cover;
-    background-position: 100% 0%;
-    animation: 8s;
+    background-position-y: 100% 0%;
+    transition: 10s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .img-port:hover{
-    background-position: 100% 100%;
+    background-position: 100% 90%;
 }
 
 .overlay{
@@ -409,7 +568,7 @@ section.projeto{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #58585852;
+    background-color: #0f0f0f94;
     border-radius: 40px;
     display: flex;
     align-items:center ;
@@ -428,12 +587,16 @@ section.projeto .flex{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top: 50px;
+    gap: 2rem;
 }
 
 /* SECTION PROJETO FIM*/
 
 /* SECTION CONTATO COMEÇO*/
+section.contato{
+    padding: 80px 4%;
+}
 .contato h2{
     color: #fff;
     text-align: center;
@@ -449,7 +612,7 @@ section.projeto .flex{
 }
 
 .contato form{
-    max-width: 700px;
+    max-width: 670px;
     margin: 1rem auto;
     margin-bottom: 3rem;
     text-align: center;
@@ -468,6 +631,12 @@ section.projeto .flex{
     margin: 1rem 0;
     resize: none;
 }
+.form label{
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
 
 .contato form .btn{
     margin-top: 2rem;
@@ -533,6 +702,18 @@ footer .copyright{
 }
 /* ANIMAÇÕES */
 
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 @keyframes jumping{
     from{transform: translateY(-15px ); }
 
@@ -543,16 +724,17 @@ footer .copyright{
 }
 
 .hidden{
-    opacity: 0;
+    opacity: 1;
     filter: blur(10px);
-    transition: all 2s;
+    transition: all 4s;
     transform: translateX(-100%);
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    transition: all 2s;
+    transition: all 4s;
     transform: translateX(0);
 }
+
 /* ANIMAÇÕES */

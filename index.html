@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-right.css'>
     <script defer src="app.js"></script>
     
 
@@ -18,14 +20,14 @@
 
         <div class="Topo"><!--INTERFACE-->
             <div class="logo"><!--logo-->
-                <a href="#home">
-                    <img class="img" src="/imagens/Minha_Logo/VK-LogoTipo2(1).png" height="80" width="90" alt="Logo agência VK"> 
+                <a href="#inicio">
+                    <img class="img" src="/imagens/Minha_Logo/Logo-VK2.0.png" height="80" width="90" alt="Logo agência VK"> 
                 </a>
             </div><!--logo-->
 
-            <nav class="menu_desktop">
+            <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#home">Início</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#especialidade">Especialidades</a></li>
                     <li><a href="#projeto">Projetos</a></li>
@@ -34,37 +36,63 @@
             </nav>
 
             <div class="VK-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
-
             </div>
 
-
+            
+            
+            <div class="btn-abrir" id="btn-menu"><!--BTN ABRIR-->
+                <i class="fa-solid fa-bars-staggered fa-lg"></i>
+            </div><!--BTN ABRIR-->
+    
+            <div class="menu-mobile" id="menu-mobile"><!--MENU MOBILE-->
+                <div class="btn-fechar"><!--BTN FECHAR-->
+                    <i class="bi bi-x-lg"></i></i>
+                    
+                </div><!--BTN FECHAR-->
+    
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#especialidade">Especialidades</a></li>
+                        <li><a href="#projeto">Projetos</a></li>
+                        <li><a href="#contato">contato</a></li>
+                    </ul>
+    
+                </nav>
+    
+            </div><!--MENU MOBILE-->
+            <div class="overlay-menu" id="overlay-menu">
+    
+            </div>
         </div><!--INTERFACE-->
+
     </header><!--CABEÇALHO FIM-->
 
-    <section class="inicio"><!--SECTION INÍCIO-->
+    <section id="inicio" class="inicio"><!--SECTION INÍCIO-->
         <div class="interface"><!--INTERFACE-->
             <div class="flex"><!--INTERFACE-->
                 <div class="titulo"><!--TITULO TOPO-->
                     <h3>Olá, Meu nome é</h3>
                         <h1>João V. Gomes</h1>
-                    <div class="txt-animado">E sou <span></span></div>
+                    <div class="txt-animado">E eu sou <span></span></div>
             
                 </div><!--TITULO TOPO FIM-->
             
                 <div class="socias-midia"><!--MIDIAS SOCIAIS-->
-                    <a href="#">
+                    <a href="https://www.instagram.com/volkemann/%20target=">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/Volkemann">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/joão-vitor-26838b21b/">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://w.app/chatvolkemanndev">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
         
@@ -88,7 +116,7 @@
 
     </section><!--SECTION INICIO FIM-->
 
-    <section class="sobre"><!--SECTION SOBRE-->
+    <section id="sobre" class="sobre"><!--SECTION SOBRE-->
         <div class="hidden">
             <div class="interface"><!--INTERFACE-->
                 <div class="flex-sobre"><!--FLEX-->
@@ -106,7 +134,7 @@
         </div>
     </section><!--SECTION SOBRE FIM-->
 
-    <section class="especialidades"><!--SECTION ESPECIALIDADES-->
+    <section id="especialidade" class="especialidades"><!--SECTION ESPECIALIDADES-->
         <div class="hidden">
 
             <div class="interface"><!--INTERFACE-->
@@ -120,37 +148,37 @@
                             <div class="card"> <img src="/imagens/icons/html5.png" width="75px" height="70px" alt="">
                                 <h2>- HTML 5 -</h2>
                                 <p>Tenho ampla experiência em desenvolver interfaces de usuário interativas e responsivas, Utilizo as melhores práticas de desenvolvimento e técnicas avançadas para construir aplicações web robustas, escaláveis, fluida, intuitiva e visualmente atraentes.</p>
-                                <a href="https://ebaconline.com.br/blog/o-que-e-html5-seo#:~:text=O%20HTML5%20é%20a%20última,adicionar%20funcionalidade%20aos%20elementos%20HTML." class="button">Saiba Mais</a>
+                                <a href="https://www.alura.com.br/artigos/html" class="button">Saiba Mais</a>
                             </div>
     
                             <div class="card"> <img src="/imagens/icons/css-icon.png" width="75px" height="70px" alt="">
                                 <h2>- CSS 3 -</h2>
                                 <p>Conhecimento em CSS3 que me permite criar interfaces de usuário sofisticadas e visualmente atraentes. Utilizo técnicas avançadas como Flexbox, Grid Layout e animações CSS para desenvolver layouts responsivos que se adaptam perfeitamente a qualquer dispositivo.</p>
-                                <a href="#" class="button">Saiba Mais</a>
+                                <a href="https://www.alura.com.br/artigos/css" class="button">Saiba Mais</a>
                             </div>
     
                             <div class="card"> <img src="/imagens/icons/icon-react.png" width="75px" height="70px" alt="">
                                 <h2>- React -</h2>
                                 <p>Experiência na criação de interfaces de usuário dinâmicas e responsivas que não apenas atendem, mas superam as expectativas dos usuários. Meu foco está em desenvolver soluções que sejam visualmente atraentes e funcionais, garantindo uma experiência de usuário fluida e intuitiva em diferentes dispositivos e plataformas.</p>
-                                <a href="#" class="button">Saiba Mais</a>
+                                <a href="https://www.alura.com.br/artigos/react-js" class="button">Saiba Mais</a>
                             </div>
     
                             <div class="card"> <img src="/imagens/icons/java-script-png.png" width="75px" height="70px" alt="">
                                 <h2>- JavaScript  -</h2>
-                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
-                                <a href="#" class="button">Saiba Mais</a>
+                                <p>Especializado na criação de aplicações interativas e responsivas. Possuo habilidade em frameworks popular como React, além de forte conhecimento em Node.js para desenvolvimento de back-end. Capaz de transformar ideias em soluções eficientes</p>
+                                <a href="https://www.alura.com.br/artigos/javascript" class="button">Saiba Mais</a>
                             </div>
     
                             <div class="card"> <img src="/imagens/icons/node-js.227x256.png" width="75px" height="79px" alt="">
                                 <h2>- Node JS -</h2>
-                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
-                                <a href="#" class="button">Saiba Mais</a>
+                                <p>Experiência prática em construir APIs RESTful e aplicações web utilizando frameworks como Express. Familiaridade com bancos de dados como SQL. Habilidades em trabalhar com Git e controle de versão, além de um bom entendimento de fundamentos de programação e princípios de design de software. Proativo e ávido por aprender, com uma mentalidade orientada a soluções</p>
+                                <a href="https://www.alura.com.br/artigos/node-js" class="button">Saiba Mais</a>
                             </div>
                         
-                            <div class="card"> <img src="/imagens/icons/python.png" width="75px" height="79px" alt="">
-                                <h2>- Python -</h2>
-                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
-                                <a href="#" class="button">Saiba Mais</a>
+                            <div class="card"> <img src="/imagens/icons/icon-git.png" width="75px" height="79px" alt="">
+                                <h2>- Git -</h2>
+                                <p>Controle de versão e gerenciamento de código. Proficiente em ramificação, mesclagem e resolução de conflitos, além de práticas de versionamento colaborativo. Familiaridade com workflows Git, como Git Flow, e uso de plataformas como GitHub e GitLab. Comprometido com a escrita de código limpo</p>
+                                <a href="https://git-scm.com/book/pt-br/v2/Começando-O-Básico-do-Git" class="button">Saiba Mais</a>
                             </div>
     
                         </div><!--CARTAS HABILIDADES FIM-->
@@ -160,22 +188,24 @@
         </div>
     </section><!--SECTION ESPECIALIDADES FIM-->
 
-    <section class="projeto"><!--SECTION PROJETO-->
+    <section id="projeto" class="projeto"><!--SECTION PROJETO-->
         <div class="hidden">
 
             <div class="interface"><!--INTERFACE-->
                 <h2>PROJETOS</h2>
                 <div class="flex"><!--FLEX-->
-                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
+                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/Mockup_Link_Tree-VK5.0.png);"><!--Imagem do projeto-->
                         <div class="overlay">
-                            Projeto 1 <!--Nome projeto-->
+                            Árvore de Link <!--Nome projeto-->
                         </div>
                     </div>
-                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
+
+                    <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/Mockup_Portfolio-VK6.0.png);"><!--Imagem do projeto-->
                         <div class="overlay">
-                            Projeto 2 <!--Nome projeto-->
+                            PORTFOILO VK <!--Nome projeto-->
                         </div>
                     </div>
+
                     <div class="img-port" style="background-image: url(/imagens/Imagens-Projetos/em-breve.png);"><!--Imagem do projeto-->
                         <div class="overlay">
                             Projeto 3 <!--Nome projeto-->
@@ -187,21 +217,27 @@
         </div>
     </section><!--SECTION PROJETO FIM-->
 	
-    <section class="contato"><!--SECTION CONTATO-->
+    <section id="contato" class="contato"><!--SECTION CONTATO-->
         <div class="hidden">
 
             <div class="interface">
                 <h2 class="heading">FALE COMIGO</h2>
                 <div class="flex">
     
-                    <form action="">
+                    <form action="https://formsubmit.co/volkmanndeveloper@gmail.com" method="POST" class="form">
+                    
                         <div class="input-box">
-                            <input type="text" name="name" placeholder="Nome" required>
-                            <input type="email" placeholder="Email @" required>
-                            <input type="Numero" placeholder="Nº de Telefone" required>
-                            <input type="text" placeholder="Objetivo">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Seu email" required>
+                            <label for="number">Numero de telefone</label>
+                            <input type="number" name="number" id="number" placeholder="Seu numero" required>
+                            <label for="text">Objetivo</label>
+                            <input type="text" name="text" id="text" placeholder="Seu objetivo">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Fale mais sobre"></textarea>
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Sua Menssagem"></textarea>
                         <input type="Submit" value="Mandar mensagem" class="btn">
                     </form>
     

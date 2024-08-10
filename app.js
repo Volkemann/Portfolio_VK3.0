@@ -1,5 +1,26 @@
+/* INTERFACE MENU MOBILE COMEÇO*/
 
-/* SCROLLAR TELA PARA BAIXO*/
+let btnMenu = document.getElementById('btn-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.getElementById('overlay-menu')
+
+btnMenu.addEventListener('click', ()=>{
+  menu.classList.add('abrir-menu')
+})
+
+menu.addEventListener('click', ()=>{
+  menu.classList.remove('abrir-menu')
+})
+
+overlay.addEventListener('click', ()=>{
+  menu.classList.remove('abrir-menu')
+});
+
+/* INTERFACE MENU MOBILE FIM*/
+
+
+
+/* SCROLLAR TELA PARA BAIXO COMEÇO*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const botao = document.getElementById('botao');
@@ -13,20 +34,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-/* SCROLLAR TELA PARA BAIXO*/
+/* SCROLLAR TELA PARA BAIXO FIM*/
 
 
-/* BARRA DE NAVEGAÇÃO ROLAGEM*/
+/* BARRA DE NAVEGAÇÃO ROLAGEM COMEÇO*/
 
 window.addEventListener("scroll", function(){
     let header = document.querySelector('#header');
     header.classList.toggle('rolagem',window.scrollY > 100);
 });
 
-/* BARRA DE NAVEGAÇÃO ROLAGEM*/
+window.addEventListener("scroll", function() {
+  let header = document.querySelector('#header');
+  if (window.innerWidth <= 1020 && window.scrollY > 1) {
+      header.classList.add('rolagem');
+  }
+});
+
+/* BARRA DE NAVEGAÇÃO ROLAGEM FIM*/
 
 
-/*EFEITO DE APARECER CONTEUDO*/
+/*EFEITO DE APARECER CONTEUDO COMFORME DESCE A PÁG COMEÇO*/
 
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -43,4 +71,9 @@ const myObserver = new IntersectionObserver((entries) => {
   elements.forEach((element) => myObserver.observe(element));
   
 
-/*EFEITO DE APARECER CONTEUDO*/
+/*EFEITO DE APARECER CONTEUDO FIM*/
+
+
+
+
+
