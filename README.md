@@ -2,7 +2,7 @@
 
 Este é o meu repositório do site Volkemann Portfólio, uma plataforma onde apresento minhas habilidades e projetos como desenvolvedor web. O site é uma demonstração clara da minha abordagem ao desenvolvimento web, focando em design responsivo e minimalista, e experiências de usuário otimizadas.
 
-![Mockup_Portfolio-VK7 0](https://github.com/user-attachments/assets/1ea29d19-02e3-48aa-820c-18781af702a1)
+![Mockup_PortfolioB-VK7 0](https://github.com/user-attachments/assets/b70e2a6b-fcd4-4057-9e83-88ee11557caf)
 
 ---
 
