@@ -6,7 +6,7 @@ Este é o meu repositório do site Volkemann Portfólio, uma plataforma onde apr
 
 ---
 
-## Tecnologias e Ferramentas
+## Tecnologias e Ferramentas 🛠
 
 O site foi construído utilizando uma variedade de tecnologias e ferramentas modernas, destacando meu conhecimento e versatilidade em desenvolvimento web:
 
@@ -18,7 +18,7 @@ O site foi construído utilizando uma variedade de tecnologias e ferramentas mod
 
 ---
 
-## Características do Site
+## Características do Site 💻
 
 ### Design e Usabilidade
 - **Design Responsivo**: O site é completamente adaptável a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente em dispositivos móveis e desktops.
@@ -33,7 +33,7 @@ O site foi construído utilizando uma variedade de tecnologias e ferramentas mod
 
 ---
 
-## Contribuições e Contato
+## Contribuições e Contato 🤝
 
  Se tiver interesse em trabalhar comigo, não hesite em entrar em contato, estou aberto a colaborações e feedback. Se você tiver sugestões ou quiser discutir possíveis projetos, entre em contato comigo:
 
