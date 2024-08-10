@@ -1,8 +1,8 @@
 # VK Developer (PORTFOLIO)
 
-Este é o repositório do site Volkemann Portfólio, uma plataforma onde apresento minhas habilidades e projetos como desenvolvedor web. O site é uma demonstração clara da minha abordagem ao desenvolvimento web, focando em design responsivo e minimalista, e experiências de usuário otimizadas.
+Este é o meu repositório do site Volkemann Portfólio, uma plataforma onde apresento minhas habilidades e projetos como desenvolvedor web. O site é uma demonstração clara da minha abordagem ao desenvolvimento web, focando em design responsivo e minimalista, e experiências de usuário otimizadas.
 
-![Mockup_Portfolio-VK6 0](https://github.com/user-attachments/assets/b416f4fc-038f-487e-8231-16b6245f3c98)
+![Mockup_Portfolio-VK7 0](https://github.com/user-attachments/assets/1ea29d19-02e3-48aa-820c-18781af702a1)
 
 ---
 
@@ -28,8 +28,7 @@ O site foi construído utilizando uma variedade de tecnologias e ferramentas mod
 - **Formulário de Contato Integrado**: Permite aos visitantes enviar mensagens diretamente através do site.
 - **Botões de Acesso Rápido**: Botões para WhatsApp e retorno ao topo melhoram a navegabilidade e acessibilidade.
 
-### SEO e Performance
-- **Otimizado para SEO**: Meta tags e descrições cuidadosamente escolhidas para melhorar a visibilidade do site em motores de busca.
+### Performance
 - **Alto Desempenho**: O código foi otimizado para carregamento rápido e desempenho eficiente.
 
 ---
